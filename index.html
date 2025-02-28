@@ -4,93 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco-friendly Product</title>
-    <style>
-        /* General Body */
-        body {
-            background-color: #f0fdf4; /* bg-green-50 */
-            color: #1f2937; /* text-gray-900 */
-            position: relative;
-        }
-
-        /* Background Image */
-        .eco-background {
-            width: 100%;
-            height: auto;
-            position: absolute;
-            top: auto;
-            bottom: 0;
-            left: auto;
-            right: auto;
-            z-index: -1;
-            opacity: 0.1;
-        }
-
-        /* Content Box */
-        .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 1.5rem; /* p-6 */
-            text-align: center;
-        }
-
-        /* QR Code */
-        .qr-code {
-            width: auto;
-            max-width: 300px;
-            height: auto;
-            margin-bottom: 1rem; /* mb-4 */
-        }
-
-        /* Headline */
-        h1 {
-            font-size: 1.875rem; /* text-3xl */
-            font-weight: bold; /* font-bold */
-        }
-
-        /* Subheading */
-        p {
-            margin-top: 0.5rem; /* mt-2 */
-            font-size: 1.125rem; /* text-lg */
-        }
-
-        /* Learn More Button */
-        .learn-more {
-            margin-top: 1rem; /* mt-4 */
-            padding: 0.75rem 1.5rem; /* px-6 py-3 */
-            background-color: #16a34a; /* bg-green-600 */
-            color: white;
-            font-size: 1.125rem; /* text-lg */
-            border-radius: 0.5rem; /* rounded-lg */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
-            transition: background-color 0.3s ease;
-        }
-
-        .learn-more:hover {
-            background-color: #15803d; /* hover:bg-green-700 */
-        }
-
-        /* Sponsored Text */
-        .sponsored-text {
-            margin-top: 2rem; /* mt-8 */
-            color: #4b5563; /* text-gray-600 */
-            font-size: 0.875rem; /* text-sm */
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <img src="1769746.svg" alt="Eco Friendly" class="eco-background">
-    
-    <div class="content">
-        <img src="QR_code_for_mobile_English_Wikipedia.svg.png" alt="Eco Friendly" class="qr-code">
-        <h1>This Product is Eco-Friendly</h1>
-        <p>We care about you! Scan the QR code on your package to learn more.</p>
-        <a href="#" class="learn-more">
+<body class="bg-green-50 text-gray-900" style="position: relative;">
+    <img src="1769746.svg" alt="Eco Friendly"
+        style=" width: 100%; height: auto;
+        position: absolute;
+        top: auto; bottom: 0; left: auto; right: auto;
+        z-index: -1;
+        opacity: 0.1;
+        ">
+
+    <div class="flex flex-col items-center justify-center min-h-screen p-6 text-center">
+        <img src="QR_code_for_mobile_English_Wikipedia.svg.png" alt="Eco Friendly" class="w-32 h-32 mb-4" 
+        style=" width: auto; max-width: 300px; height: auto;">
+        <h1 class="text-3xl font-bold">This Product is Eco-Friendly</h1>
+        <p class="mt-2 text-lg">We care about you! Scan the QR code on your package to learn more.</p>
+        <a href="#" class="mt-4 px-6 py-3 bg-green-600 text-white text-lg rounded-lg shadow-md hover:bg-green-700 transition">
             Learn More
         </a>
-        <div class="sponsored-text">Sponsored Content / Ads</div>
+        <div class="mt-8 text-gray-600 text-sm">Sponsored Content / Ads</div>
     </div>
 </body>
 </html>
